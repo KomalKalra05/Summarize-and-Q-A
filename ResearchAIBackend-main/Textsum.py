@@ -90,14 +90,14 @@ class all_in_one():
 
                 return completion.result
         def askai21(content , doubt ):
-             ai21.api_key = ''
+             ai21.api_key = 'api'
              a=ai21.Answer.execute(context=content, question=doubt)
              data={}
              data["answer"]=a.answer
              data["valid"]=a.answerInContext
              return data
         def askgem(question):
-                apikey=""
+                apikey="api"
                 genai.configure(api_key=apikey)
                 model = genai.GenerativeModel('gemini-pro')
                 generation_config = {
