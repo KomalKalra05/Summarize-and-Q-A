@@ -129,7 +129,7 @@ class sum:
                                 else:
                                     sentencescores[sent]+=wordFrequencies[word.text.lower()]
                 #print(sentencescores)
-             
+            
 
                 summarized=nlargest(lines,sentencescores,key=sentencescores.get)
                 final=""
@@ -172,6 +172,6 @@ class sum:
             finaloutput=finaldata.replace("<bos>"," ")
             finaloutput=finaloutput.replace("<eos>"," ")
             if (finaldata2!=""):
-                 return finaloutput+"References \n"+finaldata2
+                return finaloutput+"References \n"+finaldata2
     
             return finaloutput
