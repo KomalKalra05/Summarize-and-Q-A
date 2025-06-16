@@ -58,22 +58,3 @@ The system follows a comprehensive flow that handles both local data processing 
 5. **Knowledge Graph**: Neo4j processes comparison and relational queries
 6. **Fallback**: Google SERP API provides additional context when needed
 7. **Response Generation**: Gemini 2B generates comprehensive answers
-
-## 🔧 Technical Details
-
-**Vector Search (Local RAG)**
-- **Chunking Strategy**: Documents split into 10-sentence chunks with minimum 30 tokens
-- **Embedding Storage**: MongoDB with Base64-encoded embeddings for efficient storage
-- **Retrieval Method**: Cosine similarity matching between query and document embeddings
-- **Best for**: Factual queries, mathematical content extraction, formula explanations, specific information retrieval
-
-**Knowledge Graph (Neo4j)**
-- **Entities**: Papers, authors, methodologies, results, concepts, mathematical models, formulas
-- **Relationships**: Citations, comparisons, methodological similarities
-- **Query Language**: Cypher queries for complex relationships
-- **Best for**: Comparison queries, multi-entity analysis, relationship exploration
-
-**Fallback Mechanism**
-- **Trigger**: When local retrieval confidence is below threshold
-- **Method**: Google SERP API for external information
-- **Integration**: Results combined with local context
