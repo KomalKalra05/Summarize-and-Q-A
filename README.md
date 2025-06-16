@@ -10,8 +10,6 @@ This project addresses the limitations of traditional RAG systems when handling 
 
 - **Hybrid Architecture**: Combines local RAG (vector-based) and knowledge-based RAG (graph database)
 - **Multi-format Support**: Handles PDF documents, DOC files, web links, and academic papers with mathematical formulas
-- **Mathematical Content Processing**: Advanced parsing of mathematical equations, formulas, and scientific notation
-- **Universal Document Support**: Works with research papers, technical reports, academic theses, and any PDF content
 - **Intelligent Query Routing**: Automatically determines the best retrieval method based on query type
 - **Fallback Mechanism**: Uses Google SERP API when local data is insufficient
 - **Entity Relationship Analysis**: Leverages Neo4j for complex comparison and relational queries
