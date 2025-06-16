@@ -4,7 +4,7 @@ A sophisticated Retrieval-Augmented Generation (RAG) system that combines vector
 
 ## 🎯 Overview
 
-This project addresses the limitations of traditional RAG systems when handling comparison-based and multi-entity queries across diverse academic content. By integrating local vector search with a Neo4j knowledge graph, the system provides accurate answers to both simple factual questions and complex relational queries about research papers, academic documents, technical reports, and any PDF content including mathematical formulas and scientific notation.
+This project addresses the limitations of traditional RAG systems when handling comparison-based and multi-entity queries across diverse academic content. By integrating local vector search with a Neo4j knowledge graph, the system provides accurate answers to both simple factual questions and complex relational queries about research papers, academic documents, technical reports, and any PDF content including mathematical formulas.
 
 ## ✨ Features
 
